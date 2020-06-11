@@ -20,13 +20,13 @@ export const VideoPage = ({ videoNode, onLeftChildPicked, onRightChildPicked, on
           setShouldShowControls(false);
           onLeftChildPicked();
         }} className="Video-choice-button">
-          Wybierz lewy
+          Wybierz {videoNode.leftChoice}
         </Button>
         <Button variant="contained" color="primary" onClick={() => {
           setShouldShowControls(false);
           onRightChildPicked();
         }} className="Video-choice-button">
-          Wybierz prawy
+          Wybierz {videoNode.rightChoice}
         </Button>
       </div>
       <div className="Video-replay">

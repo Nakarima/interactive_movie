@@ -33,9 +33,16 @@ function App({ nodes }: AppProps) {
   const [fullScreen, setFullScreen] = useState<boolean>(false);
   const [path, setPath] = useState<string>("true");
 
+  const truthPathCleaner = (vn: VideoNode) => {
+    if (vn.important) {
+      return path + "-" + vn.id;
+    }
+    return path;
+  }
+
   const pickChild = (videoNode?: VideoNode) => {
     if (videoNode !== undefined) {
-      setPath(path + "-" + videoNode.id);
+      setPath(truthPathCleaner(videoNode));
       return setVideoNode(videoNode);
     }
     setFullScreen(false);
