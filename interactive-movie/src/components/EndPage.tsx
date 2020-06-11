@@ -1,13 +1,13 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 
-interface HomePageProps {
+export interface EndPageProps {
   onClick: () => any;
 }
 
-export const HomePage = ({ onClick }: HomePageProps) => (
-  <><h1>Witaj w naszym filmie o patologii internetowych celebrytów</h1>
+export const EndPage = ({ onClick }: EndPageProps) => (
+  <><h1>Koniec</h1>
     <Button variant="contained" color="primary" onClick={onClick}>
-      Zacznij stalkować
+      Powrót na początek
   </Button></>
 );

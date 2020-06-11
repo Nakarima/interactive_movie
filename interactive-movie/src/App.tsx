@@ -6,6 +6,7 @@ import { VideoNode } from './models/VideoNode';
 import Fullscreen from "react-full-screen";
 import { HomePage } from './components/HomePage';
 import { VideoPage } from './components/VideoPage';
+import { EndPage } from './components/EndPage';
 
 
 const theme = createMuiTheme({
@@ -17,64 +18,54 @@ const theme = createMuiTheme({
 
 
 enum Page {
-  VIDEO_PAGE,
-  HOME_PAGE,
-  END_PAGE,
+  videoPage,
+  homePage,
+  endPage,
 }
 
+interface AppProps {
+  nodes: { [id: string]: VideoNode }
+}
 
-function App() {
-  const nodes: { [id: string]: VideoNode } = {
-    "1.1": {
-      id: "1.1",
-      url: "vxKBHX9Datw",
-      leftChild: "1.2",
-      rightChild: "1.3",
-    },
-    "1.2": {
-      id: "1.2",
-      url: "_3SCobZsB4E",
-      leftChild: "end",
-      rightChild: "end",
-    },
-    "1.3": {
-      id: "1.3",
-      url: "3bNITQR4Uso",
-      leftChild: "end",
-      rightChild: "end",
-    },
-  }
+function App({ nodes }: AppProps) {
+  const [page, setPage] = useState<Page>(Page.homePage);
+  const [videoNode, setVideoNode] = useState<VideoNode>(nodes["1.1"]);
+  const [fullScreen, setFullScreen] = useState<boolean>(false);
 
-  const [page, setPage] = useState(Page.HOME_PAGE);
-  const [videoNode, setVideoNode] = useState(nodes["1.1"]);
-  const [fullScreen, setFullScreen] = useState(false)
-
-  const nextChild = (videoNode?: VideoNode) => {
+  const pickChild = (videoNode?: VideoNode) => {
     if (videoNode !== undefined) {
       return setVideoNode(videoNode);
     }
     setFullScreen(false);
-    setPage(Page.END_PAGE);
+    setPage(Page.endPage);
     return;
+  };
+
+  const resetState = () => {
+    setPage(Page.homePage);
+    setVideoNode(nodes["1.1"]);
+    setFullScreen(false);
   };
 
   const renderPage = () => {
     switch (page) {
-      case Page.HOME_PAGE:
-        return <HomePage onClick={() => {
-          setPage(Page.VIDEO_PAGE);
-          setFullScreen(true);
-        }} />
-      case Page.VIDEO_PAGE:
+      case Page.homePage:
+        return <HomePage
+          onClick={() => {
+            setPage(Page.videoPage);
+            setFullScreen(true);
+          }}
+        />
+      case Page.videoPage:
         return <VideoPage
           videoNode={videoNode}
-          onLeftChildPicked={() => nextChild(nodes[videoNode.leftChild])}
-          onRightChildPicked={() => nextChild(nodes[videoNode.rightChild])}
+          onLeftChildPicked={() => pickChild(nodes[videoNode.leftChild])}
+          onRightChildPicked={() => pickChild(nodes[videoNode.rightChild])}
         />
-      case Page.END_PAGE:
-        return <h1>End</h1>
+      case Page.endPage:
+        return <EndPage onClick={resetState} />
     }
-  }
+  };
 
   return (
     <ThemeProvider theme={theme}>
