@@ -8,13 +8,25 @@
   "1.2": {
     "id": "1.2",
     "url": "_3SCobZsB4E",
-    "leftChild": "end",
-    "rightChild": "end"
+    "leftChild": "trueL",
+    "rightChild": "trueL"
   },
   "1.3": {
     "id": "1.3",
     "url": "3bNITQR4Uso",
-    "leftChild": "end",
-    "rightChild": "end"
+    "leftChild": "truth",
+    "rightChild": "truth"
+  },
+  "true-1.2": {
+    "id": "true-1.2",
+    "url": "FZ1-Tcgcvm4",
+    "leftChild": "truth",
+    "rightChild": "truth"
+  },
+  "true-1.3": {
+    "id": "true-1.3",
+    "url": "Kg8YylxYCpg",
+    "leftChild": "truth",
+    "rightChild": "truth"
   }
 }

@@ -31,9 +31,11 @@ function App({ nodes }: AppProps) {
   const [page, setPage] = useState<Page>(Page.homePage);
   const [videoNode, setVideoNode] = useState<VideoNode>(nodes["1.1"]);
   const [fullScreen, setFullScreen] = useState<boolean>(false);
+  const [path, setPath] = useState<string>("true");
 
   const pickChild = (videoNode?: VideoNode) => {
     if (videoNode !== undefined) {
+      setPath(path + "-" + videoNode.id);
       return setVideoNode(videoNode);
     }
     setFullScreen(false);
@@ -61,6 +63,7 @@ function App({ nodes }: AppProps) {
           videoNode={videoNode}
           onLeftChildPicked={() => pickChild(nodes[videoNode.leftChild])}
           onRightChildPicked={() => pickChild(nodes[videoNode.rightChild])}
+          onTruthPicked={() => pickChild(nodes[path])}
         />
       case Page.endPage:
         return <EndPage onClick={resetState} />

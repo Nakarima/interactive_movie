@@ -7,22 +7,23 @@ interface VideoPageProps {
   videoNode: VideoNode;
   onLeftChildPicked: () => any;
   onRightChildPicked: () => any;
+  onTruthPicked: () => any;
 }
 
-export const VideoPage = ({ videoNode, onLeftChildPicked, onRightChildPicked }: VideoPageProps) => {
-  const [showControls, setShowControls] = useState(false);
+export const VideoPage = ({ videoNode, onLeftChildPicked, onRightChildPicked, onTruthPicked }: VideoPageProps) => {
+  const [shouldShowControls, setShouldShowControls] = useState(false);
 
-  const controls = (
+  const choiceControls = (
     <div className="Video-controls">
       <div className="Video-choice">
         <Button variant="contained" color="primary" onClick={() => {
-          setShowControls(false);
+          setShouldShowControls(false);
           onLeftChildPicked();
         }} className="Video-choice-button">
           Wybierz lewy
         </Button>
         <Button variant="contained" color="primary" onClick={() => {
-          setShowControls(false);
+          setShouldShowControls(false);
           onRightChildPicked();
         }} className="Video-choice-button">
           Wybierz prawy
@@ -30,13 +31,62 @@ export const VideoPage = ({ videoNode, onLeftChildPicked, onRightChildPicked }: 
       </div>
       <div className="Video-replay">
         <Button variant="contained" color="secondary" onClick={() => {
-          setShowControls(false);
+          setShouldShowControls(false);
         }} className="Video-choice-button">
           Odtwórz ponownie
       </Button>
       </div>
     </div>
   );
+
+  const truthControls = (
+    <div className="Video-controls">
+      <div className="Video-choice">
+        <Button variant="contained" color="primary" onClick={() => {
+          setShouldShowControls(false);
+          onTruthPicked();
+        }} className="Video-choice-button">
+          Pokaz prawdę.
+        </Button>
+      </div>
+      <div className="Video-replay">
+        <Button variant="contained" color="secondary" onClick={() => {
+          setShouldShowControls(false);
+        }} className="Video-choice-button">
+          Odtwórz ponownie
+      </Button>
+      </div>
+    </div>
+  );
+
+  const endControls = (
+    <div className="Video-controls">
+      <div className="Video-choice">
+        <Button variant="contained" color="primary" onClick={() => {
+          setShouldShowControls(false);
+          onLeftChildPicked();
+        }} className="Video-choice-button">
+          Zakończ.
+        </Button>
+      </div>
+      <div className="Video-replay">
+        <Button variant="contained" color="secondary" onClick={() => {
+          setShouldShowControls(false);
+        }} className="Video-choice-button">
+          Odtwórz ponownie
+      </Button>
+      </div>
+    </div>
+  );
+
+  const showControls = (videoNode: VideoNode) => {
+    if (videoNode.leftChild === "truth") {
+      return truthControls;
+    } else if (videoNode.leftChild === "end") {
+      return endControls;
+    }
+    return choiceControls;
+  }
 
   return (
     <>
@@ -48,10 +98,10 @@ export const VideoPage = ({ videoNode, onLeftChildPicked, onRightChildPicked }: 
         showRelatedVideos={false}
         annotations={false}
         allowFullscreen={false}
-        onEnd={() => { setShowControls(true) }}
+        onEnd={() => { setShouldShowControls(true) }}
         autoplay
       />
-      {showControls && controls}
+      {shouldShowControls && showControls(videoNode)}
     </>
   );
 };
