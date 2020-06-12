@@ -12,7 +12,7 @@
     "id": "1.komputer.1",
     "url": "JQqiRX91zgw",
     "leftChild": "1.komputer.pepsi",
-    "rightChild": "1.kopmputer.woda",
+    "rightChild": "1.komputer.woda",
     "important": false,
     "leftChoice": "Pepsi i pieczywo",
     "rightChoice": "Woda i owoce"
@@ -29,20 +29,20 @@
   "1.komputer.pepsi.film": {
     "id": "1.komputer.pepsi.film",
     "url": "Z7Si6hw_sZs",
-    "leftChild": "end",
-    "rightChild": "end",
+    "leftChild": "2.bryt",
+    "rightChild": "2.devon",
     "important": false,
-    "leftChoice": "end",
-    "rightChoice": "end"
+    "leftChoice": "Brytyjczyka",
+    "rightChoice": "Devon Rexa"
   },
   "1.komputer.pepsi.gry": {
     "id": "1.komputer.pepsi.gry",
     "url": "qPez26f2MLY",
-    "leftChild": "end",
-    "rightChild": "end",
+    "leftChild": "2.bryt",
+    "rightChild": "2.devon",
     "important": false,
-    "leftChoice": "end",
-    "rightChoice": "end"
+    "leftChoice": "Brytyjczyka",
+    "rightChoice": "Devon Rexa"
   },
   "1.komputer.woda": {
     "id": "1.komputer.woda",
@@ -56,20 +56,20 @@
   "1.komputer.woda.film": {
     "id": "1.komputer.woda.film",
     "url": "CZGsibX11Vk",
-    "leftChild": "end",
-    "rightChild": "end",
+    "leftChild": "2.bryt",
+    "rightChild": "2.devon",
     "important": false,
-    "leftChoice": "end",
-    "rightChoice": "end"
+    "leftChoice": "Brytyjczyka",
+    "rightChoice": "Devon Rexa"
   },
   "1.komputer.woda.gry": {
     "id": "1.komputer.woda.gry",
     "url": "G0xSY1YN1PE",
-    "leftChild": "end",
-    "rightChild": "end",
+    "leftChild": "2.bryt",
+    "rightChild": "2.devon",
     "important": false,
-    "leftChoice": "end",
-    "rightChoice": "end"
+    "leftChoice": "Brytyjczyka",
+    "rightChoice": "Devon Rexa"
   },
   "1.ogrod.1": {
     "id": "1.ogrod.1",
@@ -149,7 +149,7 @@
     "leftChild": "3.tag",
     "rightChild": "3.las",
     "important": true,
-    "leftChoice": "end",
+    "leftChoice": "Friend Tag",
     "rightChoice": "Sprzątanie"
   },
   "3.tag": {
@@ -172,7 +172,7 @@
   },
   "4.biala": {
     "id": "4.biala",
-    "url": "5BbUf_nxpmI",
+    "url": "6ZF2R9U46Os",
     "leftChild": "truth",
     "rightChild": "truth",
     "important": true,
@@ -181,7 +181,7 @@
   },
   "4.czarna": {
     "id": "4.czarna",
-    "url": "kYbvG_5kNkw",
+    "url": "poLDzmgKZBw",
     "leftChild": "truth",
     "rightChild": "truth",
     "important": true,

@@ -53,6 +53,7 @@ function App({ nodes }: AppProps) {
   const resetState = () => {
     setPage(Page.homePage);
     setVideoNode(nodes["1.1"]);
+    setPath("true");
     setFullScreen(false);
   };
 
