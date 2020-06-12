@@ -92,20 +92,20 @@
   "1.ogrod.pepsi.ksiazka": {
     "id": "1.ogrod.pepsi.ksiazka",
     "url": "t5gtsiIy3o8",
-    "leftChild": "end",
-    "rightChild": "end",
+    "leftChild": "2.bryt",
+    "rightChild": "2.devon",
     "important": false,
-    "leftChoice": "end",
-    "rightChoice": "end"
+    "leftChoice": "Brytyjczyka",
+    "rightChoice": "Devon Rexa"
   },
   "1.ogrod.pepsi.sport": {
     "id": "1.ogrod.pepsi.sport",
     "url": "yHBcES9W_Ig",
-    "leftChild": "end",
-    "rightChild": "end",
+    "leftChild": "2.bryt",
+    "rightChild": "2.devon",
     "important": false,
-    "leftChoice": "end",
-    "rightChoice": "end"
+    "leftChoice": "Brytyjczyka",
+    "rightChoice": "Devon Rexa"
   },
   "1.ogrod.woda": {
     "id": "1.ogrod.woda",
@@ -119,15 +119,141 @@
   "1.ogrod.woda.ksiazka": {
     "id": "1.ogrod.woda.ksiazka",
     "url": "zyCGPiP1XQo",
+    "leftChild": "2.bryt",
+    "rightChild": "2.devon",
+    "important": false,
+    "leftChoice": "Brytyjczyka",
+    "rightChoice": "Devon Rexa"
+  },
+  "1.ogrod.woda.sport": {
+    "id": "1.ogrod.woda.sport",
+    "url": "uoFGhybpTy0",
+    "leftChild": "2.bryt",
+    "rightChild": "2.devon",
+    "important": false,
+    "leftChoice": "Brytyjczyka",
+    "rightChoice": "Devon Rexa"
+  },
+  "2.bryt": {
+    "id": "2.bryt",
+    "url": "6U-szejF_4Y",
+    "leftChild": "3.tag",
+    "rightChild": "3.las",
+    "important": true,
+    "leftChoice": "Friend Tag",
+    "rightChoice": "Sprzątanie"
+  },
+  "2.devon": {
+    "id": "2.devon",
+    "url": "JaaeR2m-UGY",
+    "leftChild": "3.tag",
+    "rightChild": "3.las",
+    "important": true,
+    "leftChoice": "end",
+    "rightChoice": "Sprzątanie"
+  },
+  "3.tag": {
+    "id": "3.tag",
+    "url": "xZBNRAAaCSg",
+    "leftChild": "4.biala",
+    "rightChild": "4.czarna",
+    "important": true,
+    "leftChoice": "Białą",
+    "rightChoice": "Czarną"
+  },
+  "3.las": {
+    "id": "3.las",
+    "url": "FjRrnLSeH-8",
+    "leftChild": "4.biala",
+    "rightChild": "4.czarna",
+    "important": true,
+    "leftChoice": "Białą",
+    "rightChoice": "Czarną"
+  },
+  "4.biala": {
+    "id": "4.biala",
+    "url": "5BbUf_nxpmI",
+    "leftChild": "truth",
+    "rightChild": "truth",
+    "important": true,
+    "leftChoice": "truth",
+    "rightChoice": "truth"
+  },
+  "4.czarna": {
+    "id": "4.czarna",
+    "url": "kYbvG_5kNkw",
+    "leftChild": "truth",
+    "rightChild": "truth",
+    "important": true,
+    "leftChoice": "truth",
+    "rightChoice": "truth"
+  },
+  "true-2.devon-3.las-4.czarna": {
+    "id": "true-2.devon-3.las-4.czarna",
+    "url": "3NYrIBJJdbA",
     "leftChild": "end",
     "rightChild": "end",
     "important": false,
     "leftChoice": "end",
     "rightChoice": "end"
   },
-  "1.ogrod.woda.sport": {
-    "id": "1.ogrod.woda.sport",
-    "url": "uoFGhybpTy0",
+  "true-2.devon-3.las-4.biala": {
+    "id": "true-2.devon-3.las-4.biala",
+    "url": "s4bN_iXZfhw",
+    "leftChild": "end",
+    "rightChild": "end",
+    "important": false,
+    "leftChoice": "end",
+    "rightChoice": "end"
+  },
+  "true-2.devon-3.tag-4.czarna": {
+    "id": "true-2.devon-3.tag-4.czarna",
+    "url": "Ej-Yf4-uqU4",
+    "leftChild": "end",
+    "rightChild": "end",
+    "important": false,
+    "leftChoice": "end",
+    "rightChoice": "end"
+  },
+  "true-2.devon-3.tag-4.biala": {
+    "id": "true-2.devon-3.tag-4.biala",
+    "url": "b4uAY5LXvJc",
+    "leftChild": "end",
+    "rightChild": "end",
+    "important": false,
+    "leftChoice": "end",
+    "rightChoice": "end"
+  },
+  "true-2.bryt-3.las-4.czarna": {
+    "id": "true-2.bryt-3.las-4.czarna",
+    "url": "WrL4tcGorgI",
+    "leftChild": "end",
+    "rightChild": "end",
+    "important": false,
+    "leftChoice": "end",
+    "rightChoice": "end"
+  },
+  "true-2.bryt-3.las-4.biala": {
+    "id": "true-2.bryt-3.las-4.biala",
+    "url": "iJ5tfCL3yh0",
+    "leftChild": "end",
+    "rightChild": "end",
+    "important": false,
+    "leftChoice": "end",
+    "rightChoice": "end"
+  },
+  "true-2.bryt-3.tag-4.czarna": {
+    "id": "true-2.bryt-3.tag-4.czarna",
+    "url": "4SXHFhJcqEs",
+    "leftChild": "end",
+    "rightChild": "end",
+    "important": false,
+    "leftChoice": "end",
+    "rightChoice": "end"
+  },
+  "true-2.bryt-3.tag-4.biala": {
+    "id": "true-2.bryt-3.tag-4.biala",
+    "url": "oTcmALffJJw",
     "leftChild": "end",
     "rightChild": "end",
     "important": false,
