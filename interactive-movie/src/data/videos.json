@@ -1,47 +1,137 @@
 {
   "1.1": {
     "id": "1.1",
-    "url": "vxKBHX9Datw",
-    "leftChild": "1.2",
-    "rightChild": "1.3",
+    "url": "w2stOQF5TdM",
+    "leftChild": "1.komputer.1",
+    "rightChild": "1.ogrod.1",
     "important": false,
-    "leftChoice": "moe",
-    "rightChoice": "plastic"
+    "leftChoice": "Komputer",
+    "rightChoice": "Ogród"
   },
-  "1.2": {
-    "id": "1.2",
-    "url": "_3SCobZsB4E",
-    "leftChild": "trueL",
-    "rightChild": "trueL",
-    "important": true,
-    "leftChoice": "moe",
-    "rightChoice": "plastic"
+  "1.komputer.1": {
+    "id": "1.komputer.1",
+    "url": "JQqiRX91zgw",
+    "leftChild": "1.komputer.pepsi",
+    "rightChild": "1.kopmputer.woda",
+    "important": false,
+    "leftChoice": "Pepsi i pieczywo",
+    "rightChoice": "Woda i owoce"
   },
-  "1.3": {
-    "id": "1.3",
-    "url": "3bNITQR4Uso",
-    "leftChild": "truth",
-    "rightChild": "truth",
-    "important": true,
-    "leftChoice": "moe",
-    "rightChoice": "plastic"
+  "1.komputer.pepsi": {
+    "id": "1.komputer.pepsi",
+    "url": "Ymq2gJfNBPM",
+    "leftChild": "1.komputer.pepsi.film",
+    "rightChild": "1.komputer.pepsi.gry",
+    "important": false,
+    "leftChoice": "Film",
+    "rightChoice": "Gry"
   },
-  "true-1.2": {
-    "id": "true-1.2",
-    "url": "FZ1-Tcgcvm4",
+  "1.komputer.pepsi.film": {
+    "id": "1.komputer.pepsi.film",
+    "url": "Z7Si6hw_sZs",
     "leftChild": "end",
     "rightChild": "end",
     "important": false,
-    "leftChoice": "moe",
-    "rightChoice": "plastic"
+    "leftChoice": "end",
+    "rightChoice": "end"
   },
-  "true-1.3": {
-    "id": "true-1.3",
-    "url": "Kg8YylxYCpg",
+  "1.komputer.pepsi.gry": {
+    "id": "1.komputer.pepsi.gry",
+    "url": "qPez26f2MLY",
     "leftChild": "end",
     "rightChild": "end",
     "important": false,
-    "leftChoice": "moe",
-    "rightChoice": "plastic"
+    "leftChoice": "end",
+    "rightChoice": "end"
+  },
+  "1.komputer.woda": {
+    "id": "1.komputer.woda",
+    "url": "9a67c_8eNAY",
+    "leftChild": "1.komputer.woda.film",
+    "rightChild": "1.komputer.woda.gry",
+    "important": false,
+    "leftChoice": "Film",
+    "rightChoice": "Gry"
+  },
+  "1.komputer.woda.film": {
+    "id": "1.komputer.woda.film",
+    "url": "CZGsibX11Vk",
+    "leftChild": "end",
+    "rightChild": "end",
+    "important": false,
+    "leftChoice": "end",
+    "rightChoice": "end"
+  },
+  "1.komputer.woda.gry": {
+    "id": "1.komputer.woda.gry",
+    "url": "G0xSY1YN1PE",
+    "leftChild": "end",
+    "rightChild": "end",
+    "important": false,
+    "leftChoice": "end",
+    "rightChoice": "end"
+  },
+  "1.ogrod.1": {
+    "id": "1.ogrod.1",
+    "url": "HCEj8Kw-OZ4",
+    "leftChild": "1.ogrod.pepsi",
+    "rightChild": "1.ogrod.woda",
+    "important": false,
+    "leftChoice": "Pepsi i pieczywo",
+    "rightChoice": "Woda i owoce"
+  },
+  "1.ogrod.pepsi": {
+    "id": "1.ogrod.pepsi",
+    "url": "Ei0yzwSKoBE",
+    "leftChild": "1.ogrod.pepsi.ksiazka",
+    "rightChild": "1.ogrod.pepsi.sport",
+    "important": false,
+    "leftChoice": "Ksiązka",
+    "rightChoice": "Sport"
+  },
+  "1.ogrod.pepsi.ksiazka": {
+    "id": "1.ogrod.pepsi.ksiazka",
+    "url": "t5gtsiIy3o8",
+    "leftChild": "end",
+    "rightChild": "end",
+    "important": false,
+    "leftChoice": "end",
+    "rightChoice": "end"
+  },
+  "1.ogrod.pepsi.sport": {
+    "id": "1.ogrod.pepsi.sport",
+    "url": "yHBcES9W_Ig",
+    "leftChild": "end",
+    "rightChild": "end",
+    "important": false,
+    "leftChoice": "end",
+    "rightChoice": "end"
+  },
+  "1.ogrod.woda": {
+    "id": "1.ogrod.woda",
+    "url": "uS35MeXy7MU",
+    "leftChild": "1.ogrod.woda.ksiazka",
+    "rightChild": "1.ogrod.woda.sport",
+    "important": false,
+    "leftChoice": "Ksiazka",
+    "rightChoice": "Sport"
+  },
+  "1.ogrod.woda.ksiazka": {
+    "id": "1.ogrod.woda.ksiazka",
+    "url": "zyCGPiP1XQo",
+    "leftChild": "end",
+    "rightChild": "end",
+    "important": false,
+    "leftChoice": "end",
+    "rightChoice": "end"
+  },
+  "1.ogrod.woda.sport": {
+    "id": "1.ogrod.woda.sport",
+    "url": "uoFGhybpTy0",
+    "leftChild": "end",
+    "rightChild": "end",
+    "important": false,
+    "leftChoice": "end",
+    "rightChoice": "end"
   }
 }
