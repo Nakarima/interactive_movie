@@ -46,7 +46,7 @@ export const VideoPage = ({ videoNode, onLeftChildPicked, onRightChildPicked, on
           setShouldShowControls(false);
           onTruthPicked();
         }} className="Video-choice-button">
-          Pokaz prawdę.
+          Pokaż prawdę
         </Button>
       </div>
       <div className="Video-replay">

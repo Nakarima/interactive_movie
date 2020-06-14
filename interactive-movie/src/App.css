@@ -8,6 +8,10 @@
   justify-content: center;
 }
 
+.App-content > h2 {
+  margin: 0;
+}
+
 .App-content {
   height: 100vh;
   display: flex;

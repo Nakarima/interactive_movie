@@ -15,7 +15,7 @@
     "rightChild": "1.komputer.woda",
     "important": false,
     "leftChoice": "Pepsi i pieczywo",
-    "rightChoice": "Woda i owoce"
+    "rightChoice": "Wodę i owoce"
   },
   "1.komputer.pepsi": {
     "id": "1.komputer.pepsi",
@@ -78,7 +78,7 @@
     "rightChild": "1.ogrod.woda",
     "important": false,
     "leftChoice": "Pepsi i pieczywo",
-    "rightChoice": "Woda i owoce"
+    "rightChoice": "Wodę i owoce"
   },
   "1.ogrod.pepsi": {
     "id": "1.ogrod.pepsi",
@@ -86,7 +86,7 @@
     "leftChild": "1.ogrod.pepsi.ksiazka",
     "rightChild": "1.ogrod.pepsi.sport",
     "important": false,
-    "leftChoice": "Ksiązka",
+    "leftChoice": "Książkę",
     "rightChoice": "Sport"
   },
   "1.ogrod.pepsi.ksiazka": {
@@ -113,7 +113,7 @@
     "leftChild": "1.ogrod.woda.ksiazka",
     "rightChild": "1.ogrod.woda.sport",
     "important": false,
-    "leftChoice": "Ksiazka",
+    "leftChoice": "Książkę",
     "rightChoice": "Sport"
   },
   "1.ogrod.woda.ksiazka": {

@@ -6,8 +6,9 @@ interface HomePageProps {
 }
 
 export const HomePage = ({ onClick }: HomePageProps) => (
-  <><h1>Witaj w naszym filmie o patologii internetowych celebrytów</h1>
+  <><h2>Film interaktywny</h2>
+    <h1>Cybergwiazda</h1>
     <Button variant="contained" color="primary" onClick={onClick}>
-      Zacznij stalkować
+      Zacznij śledzić
   </Button></>
 );
